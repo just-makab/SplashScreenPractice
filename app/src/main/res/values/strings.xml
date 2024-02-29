@@ -5,4 +5,9 @@
     <string name="IsiZulu">Sawubona Mhlaba</string>
     <string name="Japanese">こんにちは世界</string>
     <string name="Arabic">مرحبا بالعالم</string>
+    <string name="EnglishButton">ENGLISH</string>
+    <string name="japaneseButton">JAPANESE</string>
+    <string name="binaryButton">BINARY</string>
+    <string name="isizuluButton">ISIZULU</string>
+    <string name="arabicButton">ARABIC</string>
 </resources>
