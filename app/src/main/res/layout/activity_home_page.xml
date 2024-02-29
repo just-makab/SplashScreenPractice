@@ -26,47 +26,48 @@
         android:layout_width="260dp"
         android:layout_height="50dp"
         android:text="JAPANESE"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ArabicButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.732" />
+        app:layout_constraintTop_toBottomOf="@+id/IsiZuluButton"
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
         android:id="@+id/EnglishButton"
         android:layout_width="260dp"
         android:layout_height="50dp"
         android:text="ENGLISH"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/BinaryButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.512" />
+        app:layout_constraintTop_toBottomOf="@+id/languageTextView"
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
         android:id="@+id/BinaryButton"
         android:layout_width="260dp"
         android:layout_height="50dp"
         android:text="BINARY"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/IsiZuluButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.585" />
+        app:layout_constraintTop_toBottomOf="@+id/EnglishButton"
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
         android:id="@+id/IsiZuluButton"
         android:layout_width="260dp"
         android:layout_height="50dp"
         android:text="ISIZULU"
+        app:layout_constraintBottom_toTopOf="@+id/JapaneseButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BinaryButton"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
         android:id="@+id/ArabicButton"
@@ -75,10 +76,17 @@
         android:text="ARABIC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.806" />
+        app:layout_constraintTop_toBottomOf="@+id/JapaneseButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
